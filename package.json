@@ -14,8 +14,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "proxy": "http://localhost:5000",
-  "homepage": ".",
   "dependencies": {
     "concurrently": "^6.0.2",
     "express": "^4.17.1",
