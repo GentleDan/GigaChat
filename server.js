@@ -8,7 +8,7 @@ const {encryption} = require("./client/src/encryption/encrypt")
 const server = http.createServer(app)
 const io = socketio(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://gigachatfront.onrender.com",
         methods: ["GET", "POST"]
     }
 })
