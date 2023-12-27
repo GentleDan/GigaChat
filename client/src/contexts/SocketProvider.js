@@ -11,7 +11,7 @@ export function SocketProvider({id, children}) {
     const [socket, setSocket] = useState()
 
     useEffect(() => {
-        const newSocket = io('gigachat-6pzo.onrender.com:10000', {query: {id}})
+        const newSocket = io('wss://gigachat-6pzo.onrender.com', {query: {id}})
         setSocket(newSocket)
 
         return () => newSocket.close()
